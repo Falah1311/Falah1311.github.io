@@ -3,58 +3,101 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hisn Al-Sahra: Desert Fortress — Wahaj Studio</title>
-<meta name="description" content="Hold the last fortress of the sands — a pixel tower-defense roguelite for Android by Wahaj Studio.">
+<title>Wahaj Studio</title>
+<meta name="description" content="Wahaj Studio — desert-born pixel games made with Godot: Hisn Al-Sahra and SAYF: Blade of the Sands.">
 <style>
   :root { color-scheme: dark; }
-  body { margin:0; background:#2a1c10; color:#e9c794;
+  body { margin:0; background:#14101f; color:#d9c7a6;
          font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
          line-height:1.65; }
-  .wrap { max-width:680px; margin:0 auto; padding:48px 22px 64px; }
-  h1 { font-size:1.9rem; margin:0 0 6px; color:#ffcf5e; letter-spacing:.5px; }
-  .tag { color:#d0a671; font-size:1.05rem; margin:0 0 30px; }
-  h2 { font-size:1.1rem; margin:34px 0 10px; color:#ffcf5e; }
-  p, li { color:#d0a671; }
-  ul { padding-left:20px; }
-  a { color:#44a08a; }
-  a:hover { color:#5dcaa5; }
-  .cta { display:inline-block; margin:14px 0 4px; padding:12px 22px;
-         background:#2c6e60; color:#e9f6f1; text-decoration:none;
-         border:2px solid #44a08a; border-radius:6px; font-weight:600; }
+  .wrap { max-width:760px; margin:0 auto; padding:52px 22px 64px; }
+
+  header h1 { font-size:2.2rem; margin:0 0 4px; color:#ffcf5e; letter-spacing:1px; }
+  header .tag { color:#a68f6d; font-size:1.05rem; margin:0 0 8px; }
+  .crescent { display:inline-block; vertical-align:-4px; margin-right:10px; }
+
+  .games { display:grid; gap:26px; margin-top:38px; }
+  @media (min-width:640px) { .games { grid-template-columns:1fr 1fr; } }
+
+  .card { border-radius:14px; padding:26px 24px 22px; border:1px solid; }
+  .card h2 { margin:0 0 4px; font-size:1.35rem; }
+  .card .sub { font-size:.98rem; margin:0 0 14px; }
+  .card p { font-size:.95rem; }
+  .card .links { margin-top:16px; }
+
+  .hisn { background:#241708; border-color:#7a5634; }
+  .hisn h2 { color:#ffcf5e; }
+  .hisn .sub { color:#d0a671; }
+  .hisn p { color:#c39d6e; }
+
+  .sayf { background:#1a1430; border-color:#4a3d78; }
+  .sayf h2 { color:#f2d493; }
+  .sayf .sub { color:#a99ac9; }
+  .sayf p { color:#b0a3cf; }
+
+  a { color:#5dcaa5; }
+  a:hover { color:#7fe4c0; }
+  .cta { display:inline-block; margin:2px 8px 6px 0; padding:10px 18px;
+         color:#e9f6f1; text-decoration:none; border-radius:6px;
+         font-weight:600; font-size:.92rem; border:2px solid #44a08a;
+         background:#2c6e60; }
   .cta:hover { background:#38897a; color:#fff; }
-  footer { margin-top:42px; padding-top:18px; border-top:1px solid #7a5634;
-           font-size:.9rem; color:#b08a5c; }
+  .soon { display:inline-block; margin:2px 8px 6px 0; padding:10px 18px;
+          color:#cdbf9a; border-radius:6px; font-weight:600; font-size:.92rem;
+          border:2px dashed #8a7a4f; background:transparent; }
+  .plink { display:block; margin-top:10px; font-size:.9rem; }
+
+  h3.about { font-size:1.05rem; margin:44px 0 8px; color:#ffcf5e; }
+  .about-p { color:#a68f6d; font-size:.95rem; }
+
+  footer { margin-top:46px; padding-top:18px; border-top:1px solid #3a3152;
+           font-size:.85rem; color:#8a7c93; }
+  footer p { margin:6px 0; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Hisn Al-Sahra: Desert Fortress</h1>
-  <p class="tag">Hold the last fortress of the sands — a pixel tower-defense roguelite.</p>
+  <header>
+    <h1><svg class="crescent" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13.2A8.6 8.6 0 0 1 10.8 4a1 1 0 0 0-1.4-1.1A10 10 0 1 0 21.1 14.6 1 1 0 0 0 20 13.2Z" fill="#ffcf5e"/></svg>Wahaj Studio</h1>
+    <p class="tag">Desert-born pixel games, made with Godot.</p>
+  </header>
 
-  <p>The dunes are endless, and so are the raiders. Man the walls, rain arrows on
-  every foe, and rise stronger with every run. Quick runs, deep permanent
-  progression, hand-crafted pixel art — and no forced ads, ever.</p>
+  <div class="games">
+    <section class="card hisn">
+      <h2>Hisn Al-Sahra: Desert Fortress</h2>
+      <p class="sub">Pixel tower-defense roguelite</p>
+      <p>The dunes are endless, and so are the raiders. Man the walls, rain
+      arrows on every foe, and rise stronger with every run. Ten desert lands,
+      the Majlis upgrade wheel, the Caravan Road — and no forced ads, ever.</p>
+      <div class="links">
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.wahajstudio.hisnalsahra">Get it on Google Play</a>
+        <a class="plink" href="privacy.html">Privacy policy</a>
+      </div>
+    </section>
 
-  <a class="cta" href="https://play.google.com/store/apps/details?id=com.wahajstudio.hisnalsahra">Get it on Google Play</a>
+    <section class="card sayf">
+      <h2>SAYF: Blade of the Sands</h2>
+      <p class="sub">Action-RPG idle under the desert night</p>
+      <p>One blade against the kawabis of the long night. Slay, train, summon
+      rafiq companions and ascend through seven regions — while your caravan
+      earns even as you sleep. In English and العربية.</p>
+      <div class="links">
+        <span class="soon">Coming soon to Google Play</span>
+        <a class="plink" href="sayf-privacy.html">Privacy policy</a>
+      </div>
+    </section>
+  </div>
 
-  <h2>What's inside</h2>
-  <ul>
-    <li>Ten desert lands, each with its own hazard — sandstorms, heat, rockfalls</li>
-    <li>The Majlis: a night-sky wheel of permanent upgrades across four constellations</li>
-    <li>The Caravan Road: a five-stop journey where your whole build travels with you</li>
-    <li>Relics, blessings, dark omens, a daily trial, and a bestiary of eleven foes</li>
-  </ul>
-
-  <h2>Support &amp; privacy</h2>
-  <p>Questions, bugs or feedback: <a href="mailto:falah1311@hotmail.com">falah1311@hotmail.com</a><br>
-  In-game, <strong>Settings → Report a bug</strong> copies a diagnostic log you can send us.</p>
-  <p><a href="privacy.html">Privacy policy</a></p>
+  <h3 class="about">Contact</h3>
+  <p class="about-p">Questions, bug reports or feedback:
+  <a href="mailto:wahajstudiogames@gmail.com">wahajstudiogames@gmail.com</a></p>
 
   <footer>
-    Made with Godot by <strong>Wahaj Studio</strong>.<br>
-    World art: Tiny Swords by Pixel Frog · Audio: Kenney (CC0) ·
-    Stat icons: game-icons.net (Lorc, Delapouite — CC BY 3.0) ·
-    Fonts: Press Start 2P and VT323 (SIL OFL).
+    <p>Made with <a href="https://godotengine.org">Godot</a> by <strong>Wahaj Studio</strong>.</p>
+    <p>Hisn Al-Sahra credits — world art: Tiny Swords by Pixel Frog · audio: Kenney (CC0) ·
+    stat icons: game-icons.net (Lorc, Delapouite — CC BY 3.0) ·
+    fonts: Press Start 2P and VT323 (SIL OFL).</p>
+    <p>SAYF credits — art, music and sound generated in-house · font: Tajawal (SIL OFL).</p>
   </footer>
 </div>
 </body>
