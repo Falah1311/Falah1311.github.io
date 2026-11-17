@@ -13,8 +13,15 @@
     <meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <script type="module" crossorigin src="./assets/index-Ce-m-dK1.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-B0wk18Pg.css">
+    <script>
+      // 1.11.0: open in the last theme straight away (lib/theme.ts keeps it here), before the data has loaded.
+      try {
+        var theme = localStorage.getItem('expenses-theme');
+        if (theme === 'desert-night' || theme === 'oasis') document.documentElement.dataset.theme = theme;
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-DkSCFC3J.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CW1S693u.css">
   <link rel="manifest" href="./manifest.webmanifest"></head>
   <body>
     <div id="root"></div>
